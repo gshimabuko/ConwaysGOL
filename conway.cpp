@@ -291,6 +291,9 @@ int main()
         } else if (neighbours > 2)
         {
             nextBoard[row][col]=1;
+        } else if(neighbours > 3)
+        {
+            nextBoard[row][col] = 0;
         } else
         {
             nextBoard[row][col] = currentBoard [row][col];
