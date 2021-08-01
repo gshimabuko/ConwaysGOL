@@ -122,8 +122,7 @@ int main()
                     neighbours++;
                 }
                
-            }
-            else
+            } else
             {
                 if (currentBoard[row][col - 1] == 1)
                 {
@@ -226,8 +225,7 @@ int main()
                 {
                     neighbours++;
                 }
-            }
-            if (col == SIZE - 1)
+            } else if (col == SIZE - 1)
             {
                 if (currentBoard[row][col - 1] == 1)
                 {
@@ -290,7 +288,7 @@ int main()
         if (neighbours < 2)
         {
             nextBoard[row][col]=0;
-        } else if(neighbours > 2)
+        } else if (neighbours > 2)
         {
             nextBoard[row][col]=1;
         } else
